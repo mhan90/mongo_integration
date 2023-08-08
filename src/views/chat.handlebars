@@ -1,0 +1,121 @@
+<div class="flex justify-center items-center h-screen" id="joinChat">
+  <div class="grid gap-9">
+    <h1 class="text-white text-5xl">Join room</h1>
+    <input
+      id="username"
+      type="text"
+      placeholder="Your name"
+      class="w-full focus:outline-none focus:placeholder-gray-400 text-gray-100 placeholder-gray-300 pl-12 bg-zinc-700 rounded-md py-3"
+    />
+    <button
+      id="joinBtn"
+      type="button"
+      class="inline-flex items-center justify-center rounded-lg px-4 py-3 transition duration-500 ease-in-out text-black bg-brand-color hover:bg-blue-400 focus:outline-none"
+    >
+      <span class="font-bold">Join</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-6 w-6 ml-2 transform rotate-90"
+      >
+        <path
+          d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+        ></path>
+      </svg>
+    </button>
+  </div>
+</div>
+<div
+  class="flex-1 p:2 sm:p-6 justify-between flex flex-col h-screen hidden"
+  id="chat"
+>
+  <div
+    class="flex sm:items-center justify-between py-3 border-b-2 border-gray-200"
+  >
+    <div class="relative flex items-center space-x-4">
+      <div class="relative"></div>
+      <div class="flex flex-col leading-tight">
+        <div class="text-2xl mt-1 flex items-center">
+          <span class="chat-color mr-3">CHAT_NAME</span>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2"></div>
+  </div>
+  <div
+    id="messages"
+    class="flex flex-col space-y-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch"
+  >
+    <div class="chat-message">
+      <div class="flex items-end">
+        <div
+          class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start"
+        >
+          <span class="brand-color">USER_NAME</span>
+          <div>
+            <span
+              class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600"
+            >msge23e23e23e23 e32 2e3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-message">
+      <div class="flex items-end justify-end">
+        <div
+          class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end"
+        >
+          <div>
+            <span
+              class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white"
+            >msge23e23e23e23 e32 2e3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-message">
+      <div class="flex items-end">
+        <div
+          class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start"
+        >
+          <span class="brand-color">USER_NAME</span>
+          <div>
+            <span
+              class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600"
+            >msge23e23e23e23 e32 2e3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-t-2 border-gray-200 px-4 pt-4 mb-2 sm:mb-0">
+    <div class="relative flex">
+      <input
+        type="text"
+        id="message"
+        placeholder="Write your message!"
+        class="w-full focus:outline-none focus:placeholder-gray-400 text-gray-100 placeholder-gray-300 pl-12 bg-zinc-700 rounded-md py-3"
+      />
+      <div class="absolute right-0 items-center inset-y-0 hidden sm:flex">
+        <button
+          id="sendMsg"
+          type="button"
+          class="inline-flex items-center justify-center rounded-lg px-4 py-3 transition duration-500 ease-in-out text-black bg-brand-color hover:bg-blue-400 focus:outline-none"
+        >
+          <span class="font-bold">Send</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-6 w-6 ml-2 transform rotate-90"
+          >
+            <path
+              d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
